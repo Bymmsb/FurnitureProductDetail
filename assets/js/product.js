@@ -26,4 +26,14 @@ $(document).ready(function(){
         $('.modal-img').attr('src',this_img);
         return false;
     })
+    $(".slide_img").click(function(){
+        $(".product-links-wap").find(".img-is-selected").removeClass("img-is-selected");
+        $(this).addClass(".img-is-selected");
+    })
+    $("#tab-item").click(function(){
+        $(".nav-tabs").find(".tab-is-selected").removeClass("tab-is-selected");
+        $(this).addClass("tab-is-selected");
+
+    })
+
 })

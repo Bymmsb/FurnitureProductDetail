@@ -60,11 +60,11 @@
 }
 
 .nav-item #tab-item:after{
-    border-bottom: 10px orange ;
+    border: none;
     color: orange;
 }
-.nav-item #tab-item:hover, .nav-item #tab-item:focus, .nav-item #tab-item:active{
-    border-bottom: 10px orange;
+.nav-item #tab-item:hover, .nav-item #tab-item:focus,.nav-item #tab-item:checked ,.nav-item #tab-item .tab-is-selected{ 
+    border-bottom: 1px solid orange;
     color: orange;
 }
 .custom-radio1 .form-check-input{
@@ -87,16 +87,15 @@
     padding-right: 1rem;
 }
 .cart-btn:hover{
-    border-color: darkgoldenrod;
+    border-color: orange;
+    color: orange;
 
 }
 .wish-btn:hover{
-    border-color: darkgoldenrod; 
+    border-color: orange; 
 }
 
-.carousel-item a:hover img{
-    border-color:#000;
-}
+
 .img-button{
     position: absolute;
     bottom: 0;
@@ -107,4 +106,19 @@
     height: 100%;
 
 }
+.breadcrumb-item:hover{
+    font-weight: bold;
+}
+.product-links-wap a {
+    opacity: .3;
+}
 
+
+.product-links-wap a:hover , .product-links-wap a:focus , .product-links-wap .img-is-selected{
+    transition: .5s;
+    opacity: 1;
+}
+
+#btn_minus:hover, #btn_plus:hover{
+    background-color:aliceblue
+}
